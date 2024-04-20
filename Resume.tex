@@ -1,0 +1,263 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PlushCV - One Page Two Column Resume
+% LaTeX Template
+% Version 1.0 (11/28/2021)
+%
+% Author:
+% Shubham Mazumder (http://mazumder.me)
+%
+% Hacked together from:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+%%Icons:
+%%Main: https://icons8.com/icons/carbon-copy
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{plushcv}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Firstname}{Lastname}{\textbf{DevOps Engineer}}
+ {\vspace*{-1mm}\hspace*{-4mm}\contactline{}{\href{https://github.com/satyapraneet63}{satyapraneet63}}{\href{https://www.linkedin.com/in/satya-praneet-challapilla-53855514b/}{satyapraneetchallapilla}}{\href{mailto:satyapraneet63@gmail.com}{satyapraneet63@gmail.com}}{\href{tel:+917665750037}{+91 7665750037}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.8\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-0.375cm}
+\section{Experience}
+%\vspace{-0.375cm}
+\subsection{Tray}
+\descript{| IT-DevOps Engineer |}
+\location{Jul 2022 – Current | Remote}
+\vspace{\topsep}
+\begin{tightemize}
+\sectionsep 
+\item[\textbullet{}] Demonstrated expertise in configuring AWS accounts, managing EC2 nodes, ECS clusters and managing RDS setup, restoration, and performance tuning for load testing.
+\item[\textbullet{}] Worked on setting up logging/monitoring systems through Cloudwatch, Opensearch and DataDog. The reporting and alerting systems integrated with these reduced application \textbf{downtime by 50\%}.
+\item[\textbullet{}] Devised scripts for deployment and integrated said scripts into Slack for enhanced operational efficiency. This lead to an \textbf{improvement of 75\%} in deployment times.
+\item[\textbullet{}]  Successfully worked on configuring \textbf{CI/CD} pipelines through CircleCI, enabling seamless code integration and deployment. 
+\item[\textbullet{}] Collaborated on Infrastructure as Code using \textbf{Terraform} to create templates of AWS accounts with all the required resources to scale and onboard new clients.
+\item[\textbullet{}] Mediated in \textbf{PCI compliance documentation} and security-related tasks, ensuring a secure and compliant infrastructure.
+\item[\textbullet{}] Ported the organization code to a MonoRepo, ensuring minimal disruption.
+\item[\textbullet{}]  Facilitated effective \textbf{cross-team and cross-region communication} through knowledge-sharing sessions and documentation.
+\item[\textbullet{}] Automated most of the IT related tasks through scripts for installation and configuration of laptops for interns and new employees according to their team.
+\end{tightemize}
+\sectionsep
+
+\subsection{Searce Cosourcing Inc.}
+\descript{| Cloud Engineer |}
+\location{Jul 2021 – Nov 2021 | Remote}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\sectionsep
+\item[\textbullet{}] Member of the Pre-sales technical team, tasked with creating SOWs for upcoming projects regarding infrastructure migration to Cloud/Hybrid environments.
+\item[\textbullet{}] Worked on analysis and cost estimation of existing infrastructure for migration to Google Cloud.
+\item[\textbullet{}]  Member of the SEA Indonesia team, tasked with targeting potential customers in the Indonesian market for migration of local servers to the Cloud.  
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-0.375cm}
+\section{Projects}
+%\vspace{-0.375cm}
+\subsection{Deployment automation}
+\descript{| Bash, Git, AWS}
+%\location{2018}
+\begin{tightemize}
+\item[\textbullet{}] Created an semi-automated process using bash scripts for picking up compiled builds from S3, transferring them to relevant target nodes and deploying to apache tomcat.
+\item[\textbullet{}] All of this is logged in Version Control using tags present on the builds for proper accountability.
+\end{tightemize}
+\sectionsep
+
+\subsection{Personal HomeServer}
+\descript{| Bash, Kubernetes, Docker}
+%\location{2018}
+\begin{tightemize}
+\item[\textbullet{}] Built a Kubernetes Cluster using Portainer, running on an Ubuntu machine. This cluster ran different containerized applications for my personal use. 
+\item[\textbullet{}] The applications include cameras for monitoring, for document/media storage and for serving Audiobooks on demand.
+\item[\textbullet{}] The server also runs OctoPrint for controlling my 3D printer remotely (Movement and Temperature). There is also a connected webcam, which supports a livestream and can make timelapses.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2020	     & Finalist & Lorem Ipsum\\
+% 2018	     & $2^{nd}$ & Dolor Sit Amet\\
+% 2015	     & Finalist  & Cras posuere\\
+% \\
+% \end{tabular}
+% \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.2\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-0.375cm}
+\section{Skills}
+\vspace{-0.375cm}
+\subsection{Cloud Platforms}
+\textbullet{} AWS  \textbullet{} GCP 
+\subsection{CI/CD} 
+\textbullet{} CircleCI \textbullet{} Jenkins
+\subsection{Containers} 
+\textbullet{} Docker
+\subsection{Scripting} 
+\textbullet{} Shell \textbullet{} YAML
+\subsection{Monitoring/Logging}
+\textbullet{} DataDog \textbullet{} Opensearch
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+\vspace{-0.375cm}
+\subsection{BITS Pilani}
+%\descript{B.E. (Hons) Electronics and Instrumentation Engineering}
+B.E. (Hons) Electronics and Instrumentation \newline Engineering \\
+\location{Jul 2021 | Pilani, Rajasthan}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     REFERENCES
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{References} 
+%\href{https://www.linkedin.com/company/john-doe/}{\textbf{John Doe}, Senior Software Developer, Tyrell Corp}
+%\begingroup
+%\setbox0=\hbox{
+%\includegraphics[scale=0.1,trim={0 1cm 0cm 0cm}]{icons/main/mail.png}\hspace{0.3cm} john.doe@email.com
+%}
+%\parbox{\wd0}{\box0}
+%\endgroup
+%\begingroup
+%\setbox0=\hbox{
+%\includegraphics[scale=0.1,trim={0 1.25cm -0.4cm 0cm}]{icons/main/phone.png}\hspace{0.3cm}+19999999999
+%}
+%\parbox{\wd0}{\box0}\endgroup
+%\\
+%\sectionsep
+%\href{https://www.linkedin.com/company/john-doe/}{\textbf{Jane Doe}}, Senior Software Developer, Primatech 
+%\\
+%\begingroup
+%\setbox0=\hbox{
+%\includegraphics[scale=0.1,trim={0 1cm 0cm 0cm}]{icons/main/mail.png}\hspace{0.3cm} jane.doe@email.com
+%}
+%\parbox{\wd0}{\box0}
+%\endgroup
+%\begingroup
+%\setbox0=\hbox{
+%\includegraphics[scale=0.1,trim={0 1.25cm -0.4cm 0cm}]{icons/main/phone.png}\hspace{0.3cm}+19999999999
+%}
+%\parbox{\wd0}{\box0}\endgroup
+%\\
+%\sectionsep
+%\section{Certifications}
+%\subsection{GCP Associate Cloud Engineer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Coursework}
+
+% \subsection{Graduate}
+% Graduate Algorithms \textbullet{}\\ 
+% Advanced Computer Architecture \textbullet{}\\ 
+% Operating Systems \textbullet{}\\ 
+% Artificial Intelligence \textbullet{}\\
+% Visualization For Scientific Data \\
+% \sectionsep
+
+% \subsection{Undergraduate}
+
+% Database Management Systems \textbullet{}\\
+% Object Oriented Analysis and Design \textbullet{}\\
+% Artificial Intelligence and Expert Systems \textbullet{}\\
+% Scripting Languages and Web Tech \textbullet{}\\
+% Software Engineering \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CERTIFICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Certifications}
+\vspace{-0.375cm}
+\subsection{{\href{https://www.credly.com/badges/945479a0-33e9-4c50-bffe-b7cccc3f298f/public_url}{AWS Cloud \newline Practitioner}}}
+Amazon Web Services \\
+\location{Certified Jan 2024}
+\sectionsep
+\subsection{{\href{https://www.credential.net/dfe60215-191b-46ff-980c-cfcabc1864c6}{Associate Cloud \newline Engineer}}}
+Google Cloud Platform \\
+\location{Certified May 2022}
+\sectionsep
+\subsection{DevOps, CI/CD for Beginners}
+Udemy \\
+\sectionsep
+%\subsection{Learn Python Programming Masterclass}
+%Udemy \\
+\sectionsep
+%\subsection{Programming Fundamentals}
+%Duke University - 97.5\% \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACHEIVEMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-0.375cm}
+\section{Achievements}
+\vspace{-0.375cm}
+\subsection{GRE}
+326/340 with 4/6 in essay \\
+\sectionsep
+\subsection{IELTS}
+Score of 8.0/9.0 \\
+\sectionsep
+\subsection{GATE 2021}
+General AIR 1470 \\
+\vspace{-0.1cm}
+\location{Instrumentation Engineering}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     HOBBIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Hobbies}
+\vspace{-0.375cm}
+\subsection{3D Printing}
+Ender3 V2
+\sectionsep
+\subsection{Fantasy Books}
+\sectionsep
+\subsection{Painting}
+Coordinator of Arts, Design and Publicity in BITS Pilani
+\end{minipage} 
+\end{document}  \documentclass[]{article}
